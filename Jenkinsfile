@@ -1,4 +1,8 @@
 pipeline{
+libraries{
+lib 'jira_connector'
+}
+
 agent any
 stages{
 
