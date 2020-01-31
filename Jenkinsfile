@@ -26,11 +26,11 @@ stages{
     steps 
     {            
              jira_collect_issue()
-            log_function("issue collected")
+            jira_log_col("issue collected")
             }
             post{
                 failure{
-                 log_function("Issue not collected")
+                 jira_log_col("Issue not collected")
                 }
             }
     }
