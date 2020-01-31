@@ -11,11 +11,11 @@ stages{
     steps
     {
             jira_create_project()
-            log_function(" project created")
+            jira_log_con(" project created")
             }
             post{
                 failure{
-                 log_function("Project not created")
+                 jira_log_con("Project not created")
                 }
             }
          
