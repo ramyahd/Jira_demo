@@ -38,18 +38,18 @@ stages{
          
     }
   */
-   /*stage('Jira_create_issue')
+   stage('Jira_create_issue')
   {    
     steps
     {
-            jira_create_issue()
+            jira_create_issue_json(JSON)
   
     }
            
          
     }
   
-*/
+
 /*  stage('Jira_collect_issue')  
   {
     steps 
