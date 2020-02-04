@@ -7,7 +7,7 @@ agent any
 stages{
   
   
-  stage('Jira_create_project')
+/*  stage('Jira_create_project')
   {    
     steps
     {
@@ -17,7 +17,7 @@ stages{
            
          
     }
-  
+  */
    stage('Jira_create_issue')
   {    
     steps
