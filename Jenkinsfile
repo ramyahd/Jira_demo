@@ -1,6 +1,6 @@
 pipeline{
 libraries{
-lib 'jira_connector'
+lib 'shlib5'
 }
 
 agent any
