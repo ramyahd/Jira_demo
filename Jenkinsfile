@@ -17,7 +17,7 @@ stages{
          
     }
   
-  stage('Jira_collect_issue')  
+/*  stage('Jira_collect_issue')  
   {
     steps 
     {            
@@ -25,6 +25,7 @@ stages{
       
     }
   }
+  */
   
   
         
