@@ -10,7 +10,14 @@ stages{
   {    
     steps
     {
-            jira_create_json(JSON)
+      sh 'curl --request POST \
+  --url http://ec2-18-191-16-16.us-east-2.compute.amazonaws.com:8080/rest/api/2/project \
+  --header 'authorization: Basic cmlnOmRpZ2l0YWxyaWdAMTIz' \
+  --header 'cache-control: no-cache' \
+  --header 'content-type: application/json' \
+  --header 'postman-token: 86ac9823-0baf-f77b-5fe9-23391b2a91a1' \
+  --data '{\r\n          \r\n          "name": "EDN250",\r\n          "key":"EDN",\r\n          "projectTypeKey": "software",\r\n          "lead": "rig"\r\n}\r\n\r\n''
+            //jira_create_json(JSON)
   
     }
            
