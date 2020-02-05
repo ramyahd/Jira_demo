@@ -107,7 +107,14 @@ stages{
     steps
     {
             jira_delete_project(JSON)
-  
+            log_function("project deleted",JSON)
+    }
+    post
+    {
+         failure
+    {
+      log_function("project not deleted",JSON)
+    }       
     }
            
          
