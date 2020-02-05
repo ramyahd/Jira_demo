@@ -23,17 +23,6 @@ stages{
    }
   
   
-  stage('Jira_create_project')
-  {    
-    steps
-    {
-            jira_create_project()
-  
-    }
-           
-         
-    }
-  
    stage('Jira_create_issue')
   {    
     steps
