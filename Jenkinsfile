@@ -102,7 +102,7 @@ stages{
     }    
     }*/
 
- /*   stage('Jira_delete_project')
+   stage('Jira_delete_project')
   {    
     steps
     {
@@ -112,7 +112,7 @@ stages{
            
          
     
-  }*/
+  }
   
         
       }
