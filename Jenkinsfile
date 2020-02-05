@@ -70,7 +70,7 @@ stages{
   }
   
 */
-       stage('Jira_delete_issue')
+      /* stage('Jira_delete_issue')
   {    
     steps
     {
@@ -84,7 +84,7 @@ stages{
       log_function("Issue not deleted",JSON)
     }       
     }    
-    }
+    }*/
 
  /*   stage('Jira_delete_project')
   {    
