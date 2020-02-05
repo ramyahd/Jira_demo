@@ -59,7 +59,21 @@ stages{
     }
            
          
+    
+  }
+  
+  
+      stage('Jira_create_project')
+  {    
+    steps
+    {
+            jira_create_project_json(JSON)
+  
     }
+           
+         
+    }
+
 
 /*  stage('Jira_collect_issue')  
   {
