@@ -80,7 +80,7 @@ stages{
   {
     steps 
     {            
-             jira_collect_issue()
+             jira_collect_issue(JSON)
       
     }
   }
