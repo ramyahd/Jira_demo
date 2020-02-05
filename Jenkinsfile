@@ -67,7 +67,7 @@ stages{
   {    
     steps
     {
-            jira_create_project_json(JSON)
+            jira_create_subtask_json(JSON)
   
     }
            
