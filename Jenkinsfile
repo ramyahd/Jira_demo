@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
-   /*stage('Jira_create_project')
+   stage('Jira_create_project')
   {    
     steps
     {
@@ -20,10 +20,10 @@ stages{
       log_function("Project not created",JSON)
     }
     }
-   }*/
+   }
   
   
-/*  stage('Jira_create_project')
+  stage('Jira_create_project')
   {    
     steps
     {
@@ -33,8 +33,8 @@ stages{
            
          
     }
-  */
-  /* stage('Jira_create_issue')
+  
+   stage('Jira_create_issue')
   {    
     steps
     {
@@ -68,7 +68,35 @@ stages{
     }       
     }    
     }
-*/
+    
+
+  
+  stage('Jira_collect_issue')  
+  {
+    steps 
+    {            
+             jira_collect_issue()
+      
+    }
+  }
+  
+
+       stage('Jira_delete_issue')
+  {    
+    steps
+    {
+            jira_delete_issue_json(JSON)
+            log_function("Issue deleted",JSON)
+    }
+    post
+    {
+         failure
+    {
+      log_function("Issue not deleted",JSON)
+    }       
+    }    
+    }
+
  /*   stage('Jira_delete_project')
   {    
     steps
@@ -80,17 +108,6 @@ stages{
          
     
   }*/
-  
-  stage('Jira_collect_issue')  
-  {
-    steps 
-    {            
-             jira_collect_issue()
-      
-    }
-  }
-  
-  
   
         
       }
