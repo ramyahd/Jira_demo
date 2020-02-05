@@ -59,6 +59,22 @@ stages{
     }
     
 
+      stage('Jira_add_comment')
+  {    
+    steps
+    {
+            jira_add_comment1(JSON)
+            log_function("Comment added",JSON)
+    }
+    post
+    {
+         failure
+    {
+      log_function("Comment not addedd",JSON)
+    }       
+    }    
+    }
+    
   
 /*  stage('Jira_collect_issue')  
   {
