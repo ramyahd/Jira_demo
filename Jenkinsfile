@@ -50,18 +50,7 @@ stages{
     }
   
   
-     stage('Jira_delete_project')
-  {    
-    steps
-    {
-            jira_delete_project(JSON)
-  
-    }
-           
-         
-    
-  }
-  
+ 
   
       stage('Jira_create_subtask')
   {    
@@ -74,7 +63,18 @@ stages{
          
     }
 
-
+    stage('Jira_delete_project')
+  {    
+    steps
+    {
+            jira_delete_project(JSON)
+  
+    }
+           
+         
+    
+  }
+  
 /*  stage('Jira_collect_issue')  
   {
     steps 
