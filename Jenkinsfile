@@ -60,7 +60,7 @@ stages{
     
 
   
-  stage('Jira_collect_issue')  
+/*  stage('Jira_collect_issue')  
   {
     steps 
     {            
@@ -69,7 +69,7 @@ stages{
     }
   }
   
-
+*/
        stage('Jira_delete_issue')
   {    
     steps
