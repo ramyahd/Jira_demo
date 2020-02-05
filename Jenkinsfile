@@ -13,9 +13,12 @@ stages{
       jira_create_json(JSON)
     log_function("Project created",JSON)
     }
+    post
+    {
     failure
     {
       log_function("Project not created",JSON)
+    }
     }
    }
   
@@ -38,12 +41,13 @@ stages{
             jira_create_issue_json(JSON)
           log_function("Issue created",JSON)
     }
-    
+    post
+    {
         failure
     {
       log_function("Project not created",JSON)
     }    
-         
+    }    
     }
   
   
@@ -56,11 +60,13 @@ stages{
             jira_create_subtask_json(JSON)
             log_function("Subtask created",JSON)
     }
+    post
+    {
          failure
     {
       log_function("subtask not created",JSON)
     }       
-         
+    }    
     }
 
  /*   stage('Jira_delete_project')
