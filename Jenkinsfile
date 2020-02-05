@@ -63,7 +63,7 @@ stages{
   }
   
   
-      stage('Jira_create_project')
+      stage('Jira_create_subtask')
   {    
     steps
     {
