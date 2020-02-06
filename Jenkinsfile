@@ -130,6 +130,22 @@ stages{
     }
     
   }
+  
+   stage('Jira_collect_all_listings')  
+  {
+    steps 
+    {            
+             jira_collect_all_listings(JSON)
+             log_function("All lists collected",JSON)
+    }
+     post
+    {
+         failure
+    {
+      log_function("ALL lists not collected",JSON)
+    }
+  }
+  }
     
        /*  stage('Jira_delete_issue')
   {    
