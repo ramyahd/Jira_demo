@@ -131,7 +131,7 @@ stages{
     
   }
   
-   stage('Jira_collect_all_listings')  
+  /* stage('Jira_collect_all_listings')  
   {
     steps 
     {            
@@ -143,6 +143,22 @@ stages{
          failure
     {
       log_function("ALL lists not collected",JSON)
+    }
+  }
+  }*/
+  
+     stage('Jira_collect_all_agile_boards')  
+  {
+    steps 
+    {            
+             jira_get_all_agile_boards(JSON)
+             log_function("All boards collected",JSON)
+    }
+     post
+    {
+         failure
+    {
+      log_function("ALL boards not collected",JSON)
     }
   }
   }
