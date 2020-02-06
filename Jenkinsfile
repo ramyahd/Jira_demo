@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
-/*  stage('Jira_create_project')
+  stage('Jira_create_project')
   {    
     steps
     {
@@ -95,7 +95,7 @@ stages{
     
   }
   
-  */
+  
    stage('Jira_collect_particular_issue')  
   {
     steps 
@@ -111,6 +111,24 @@ stages{
     }
   }
     
+   stage('Jira_collect_summary_of_project')  
+  {
+    steps 
+    {            
+             jira_summary_of_project(JSON)
+          log_function("project summary collected",JSON)
+      
+    }
+    
+     post
+    {
+         failure
+    {
+      log_function("project summary not collected",JSON)
+    }
+    }
+    
+  }
     
        /*  stage('Jira_delete_issue')
   {    
