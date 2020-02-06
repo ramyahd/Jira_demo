@@ -110,6 +110,7 @@ stages{
       log_function("Issue not collected",JSON)
     }
   }
+  }
     
    stage('Jira_collect_summary_of_project')  
   {
