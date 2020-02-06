@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
- /*  stage('Jira_create_project')
+  stage('Jira_create_project')
   {    
     steps
     {
@@ -83,7 +83,7 @@ stages{
              jira_collect_issue(JSON)
       
     }
-  }*/
+  }
          stage('Jira_delete_issue')
   {    
     steps
