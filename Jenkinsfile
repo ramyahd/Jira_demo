@@ -81,10 +81,38 @@ stages{
     steps 
     {            
              jira_collect_issue(JSON)
+          log_function("project issues collected",JSON)
       
     }
+    
+     post
+    {
+         failure
+    {
+      log_function("project issues not collected",JSON)
+    }
+    }
+    
   }
-         stage('Jira_delete_issue')
+  
+  
+   stage('Jira_collect_particular_issue')  
+  {
+    steps 
+    {            
+             jira_collect_particular_issue(JSON)
+             log_function("Issue collected",JSON)
+    }
+     post
+    {
+         failure
+    {
+      log_function("Issue not collected",JSON)
+    }
+  }
+    
+    
+       /*  stage('Jira_delete_issue')
   {    
     steps
     {
@@ -99,7 +127,7 @@ stages{
     }       
     }    
     }
-
+*/
   /* stage('Jira_delete_project')
   {    
     steps
