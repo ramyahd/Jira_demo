@@ -147,18 +147,18 @@ stages{
   }
   }*/
   
-     stage('Jira_collect_all_agile_boards')  
+     stage('jira_get_all_comments_of_issue')  
   {
     steps 
     {            
-             jira_get_all_agile_boards(JSON)
-             log_function("All boards collected",JSON)
+             jira_get_comments_of_issue(JSON)
+             log_function("All comments collected",JSON)
     }
      post
     {
          failure
     {
-      log_function("ALL boards not collected",JSON)
+      log_function("Comments not collected",JSON)
     }
   }
   }
