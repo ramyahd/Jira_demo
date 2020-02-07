@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
-  stage('Jira_create_project')
+/*  stage('Jira_create_project')
   {    
     steps
     {
@@ -130,7 +130,7 @@ stages{
     }
     
   }
-  
+  */
   /* stage('Jira_collect_all_listings')  
   {
     steps 
@@ -147,7 +147,7 @@ stages{
   }
   }*/
   
-     stage('jira_get_all_comments_of_issue')  
+    /* stage('jira_get_all_comments_of_issue')  
   {
     steps 
     {            
@@ -161,9 +161,9 @@ stages{
       log_function("Comments not collected",JSON)
     }
   }
-  }
+  }*/
     
-   /*      stage('Jira_delete_issue')
+         stage('Jira_delete_issue')
   {    
     steps
     {
@@ -194,7 +194,7 @@ stages{
     }       
     }
            
-  }  */   
+  }     
     
   }
 }
