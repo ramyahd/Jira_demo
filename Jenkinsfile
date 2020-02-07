@@ -6,6 +6,33 @@ lib 'shlib5'
 agent any
 stages{
   
+  
+  stage('Jira_project')
+  {    
+    steps
+    {
+      script
+      {
+      jira.project(JSON)
+    log_function("Project created",JSON)
+    }
+    }
+  }
+  
+  
+   stage('Jira_issue')
+  {    
+    steps
+    {
+      script
+      {
+      jira.issue(JSON)
+    //log_function("Project created",JSON)
+    }
+    }
+  }
+  
+}
 /*  stage('Jira_create_project')
   {    
     steps
@@ -163,7 +190,7 @@ stages{
   }
   }*/
     
-         stage('Jira_delete_issue')
+   /*      stage('Jira_delete_issue')
   {    
     steps
     {
@@ -194,7 +221,7 @@ stages{
     }       
     }
            
-  }     
+  }  */   
     
   }
 }
