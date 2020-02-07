@@ -6,34 +6,8 @@ lib 'shlib5'
 agent any
 stages{
   
-  
-/*  stage('Jira_project')
-  {    
-    steps
-    {
-      script
-      {
-      jira.project(JSON)
-   // log_function("Project created",JSON)
-    }
-    }
-  }
-  
-  
-   stage('Jira_issue')
-  {    
-    steps
-    {
-      script
-      {
-      jira.issue(JSON)
-    //log_function("Project created",JSON)
-    }
-    }
-  }
-  
-*/
-  stage('Jira_create_project')
+
+/*  stage('Jira_create_project')
   {    
     steps
     {
@@ -158,21 +132,7 @@ stages{
     
   }
   
-  /* stage('Jira_collect_all_listings')  
-  {
-    steps 
-    {            
-             jira_collect_all_listings(JSON)
-             log_function("All lists collected",JSON)
-    }
-     post
-    {
-         failure
-    {
-      log_function("ALL lists not collected",JSON)
-    }
-  }
-  }*/
+ 
   
      stage('jira_get_all_comments_of_issue')  
   {
@@ -205,7 +165,7 @@ stages{
     }       
     }    
     }
-
+*/
    stage('Jira_delete_project')
   {    
     steps
