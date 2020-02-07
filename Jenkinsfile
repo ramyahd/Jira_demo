@@ -7,7 +7,7 @@ agent any
 stages{
   
 
- /* stage('Jira_create_project')
+  stage('Jira_create_project')
   {    
     steps
     {
@@ -150,7 +150,7 @@ stages{
   }
   }
     
-         stage('Jira_delete_issue')
+ /*        stage('Jira_delete_issue')
   {    
     steps
     {
@@ -164,7 +164,7 @@ stages{
       log_function("Issue not deleted")
     }       
     }    
-    }*/
+    }
 
   stage('Jira_delete_project')
   {    
@@ -181,7 +181,7 @@ stages{
     }       
     }
            
-  }     
+  }  */   
     
   }
 }
