@@ -14,7 +14,7 @@ stages{
       script
       {
       jira.project(JSON)
-    log_function("Project created",JSON)
+   // log_function("Project created",JSON)
     }
     }
   }
