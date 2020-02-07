@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
- /* stage('Jira_create_project')
+  stage('Jira_create_project')
   {    
     steps
     {
@@ -129,7 +129,7 @@ stages{
     }
     }
     
-  }*/
+  }
   
   /* stage('Jira_collect_all_listings')  
   {
@@ -163,7 +163,7 @@ stages{
   }
   }
     
-         stage('Jira_delete_issue')
+   /*      stage('Jira_delete_issue')
   {    
     steps
     {
@@ -194,7 +194,7 @@ stages{
     }       
     }
            
-  }     
+  }  */   
     
   }
 }
