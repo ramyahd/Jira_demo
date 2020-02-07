@@ -38,7 +38,7 @@ stages{
     steps
     {
       jira_create_json(JSON)
-    log_function("Project created",JSON)
+    log_function("Project created")
     }
     post
     {
