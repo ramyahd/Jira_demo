@@ -32,7 +32,7 @@ stages{
     }
   }
   
-}
+
 /*  stage('Jira_create_project')
   {    
     steps
