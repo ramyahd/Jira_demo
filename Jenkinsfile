@@ -11,7 +11,11 @@ stages{
     steps
     {
         jira_delete_issue_json(JSON)
-         jira_delete_project(JSON)
+        
+    }
+    steps
+    {
+       jira_delete_project(JSON)
     }
       
   } 
