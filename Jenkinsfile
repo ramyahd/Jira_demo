@@ -10,12 +10,16 @@ stages{
   {
     steps
     {
-        jira_delete_issue_json(JSON)
-        
-    }
-    steps
-    {
-       jira_delete_project(JSON)
+          jira_create_json(JSON)
+          jira_create_issue_json(JSON)
+          jira_create_subtask_json(JSON)
+          jira_add_comment1(JSON)
+          jira_collect_issue(JSON)
+          jira_collect_particular_issue(JSON)
+          jira_summary_of_project(JSON)
+          jira_get_comments_of_issue(JSON)
+          jira_delete_issue_json(JSON)
+          jira_delete_project(JSON)  
     }
       
   } 
