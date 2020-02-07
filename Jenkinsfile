@@ -19,7 +19,7 @@ stages{
           jira_summary_of_project(JSON)
           jira_get_comments_of_issue(JSON)
           jira_delete_issue_json(JSON)
-          jira_delete_project(JSON)  
+         // jira_delete_project(JSON)  
     }
       
   } 
