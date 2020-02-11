@@ -10,7 +10,7 @@ stages{
   {
     steps
     {
-          /*jira_create_json(JSON)
+          jira_create_json(JSON)
           log_function("JIRA","Project created")
           jira_create_issue_json(JSON)
           log_function("JIRA","Issue created")
@@ -25,9 +25,9 @@ stages{
           jira_summary_of_project(JSON)
           log_function("JIRA","Project summary collected")
           jira_get_comments_of_issue(JSON)
-          log_function("JIRA","Comments collected")*/
-          jira_delete_issue_json(JSON)
-          jira_delete_project(JSON)  
+          log_function("JIRA","Comments collected")
+          //jira_delete_issue_json(JSON)
+          //jira_delete_project(JSON)  
     }
     post
     {
