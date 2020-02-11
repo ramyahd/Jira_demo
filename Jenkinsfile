@@ -67,7 +67,8 @@ stages{
   {    
     steps
     {
-            jira_create_subtask_json(JSON)
+            //jira_create_subtask_json(JSON)
+            jira_create_subtask_file(JSON)
    //         log_function("Subtask created")
     }
    
