@@ -13,7 +13,7 @@ stages{
         script
       {
         jira_collect_issue.issue(JSON)
-         jira_collect_issue.create(JSON)
+         jira_collect_issue.create()
       }
         /*  jira_create_json(JSON)
           log_function("JIRA","Project created")
