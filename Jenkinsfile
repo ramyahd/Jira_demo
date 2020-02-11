@@ -10,6 +10,11 @@ stages{
   {
     steps
     {
+        script
+      {
+        jira_collect_issue.issue(JSON)
+         jira_collect_issue.create(JSON)
+      }
         /*  jira_create_json(JSON)
           log_function("JIRA","Project created")
           jira_create_issue_json(JSON)
@@ -18,9 +23,9 @@ stages{
           log_function("JIRA","Subtask created")
           jira_add_comment1(JSON)
           log_function("JIRA","Comment added")*/
-          jira_collect_issue(JSON)
-          jira_collect_DONE(JSON)
-          Move_to_influx()
+          //jira_collect_issue(JSON)
+        //  jira_collect_DONE(JSON)
+          //Move_to_influx()
         //  log_function("JIRA","Issue collected")
         /*  jira_collect_particular_issue(JSON)
           log_function("JIRA","Issue collected")
