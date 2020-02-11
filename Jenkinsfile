@@ -19,6 +19,7 @@ stages{
           jira_add_comment1(JSON)
           log_function("JIRA","Comment added")*/
           jira_collect_issue(JSON)
+          jira_collect_DONE(JSON)
         //  log_function("JIRA","Issue collected")
         /*  jira_collect_particular_issue(JSON)
           log_function("JIRA","Issue collected")
