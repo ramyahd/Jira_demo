@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
-  stage(jira)
+  /*stage(jira)
   {
     steps
     {
@@ -36,11 +36,11 @@ stages{
         log_function("JIRA","Failed")
       }
     }
-  } 
+  } */
   
   
   
-/*  stage('Jira_create_project')
+  stage('Jira_create_project')
   {    
     steps
     {
@@ -181,7 +181,7 @@ stages{
       log_function("Comments not collected")
     }
   }
-  }*/
+  }
     
  /*        stage('Jira_delete_issue')
   {    
