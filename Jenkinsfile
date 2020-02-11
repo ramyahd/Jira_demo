@@ -20,6 +20,7 @@ stages{
           log_function("JIRA","Comment added")*/
           jira_collect_issue(JSON)
           jira_collect_DONE(JSON)
+          Move_to_influx()
         //  log_function("JIRA","Issue collected")
         /*  jira_collect_particular_issue(JSON)
           log_function("JIRA","Issue collected")
