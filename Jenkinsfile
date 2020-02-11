@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
-  /*stage(jira)
+  stage(jira)
   {
     steps
     {
