@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
-  stage(jira)
+  /*stage(jira)
   {
     steps
     {
@@ -35,8 +35,16 @@ stages{
           log_function("JIRA","Comments collected")*/
           //jira_delete_issue_json(JSON)
           //jira_delete_project(JSON)  
+    }*/
+  stage("DONE TASK")
+    {
+      
+    steps
+    {
+    jira_collect_DONE(JSON)
     }
-}
+    }
+
   
   
   
