@@ -14,7 +14,7 @@ stages{
       {
         jira_collect_issue.issue(JSON)
          jira_collect_issue.create()
-      }
+    }  }*/
         /*  jira_create_json(JSON)
           log_function("JIRA","Project created")
           jira_create_issue_json(JSON)
@@ -35,7 +35,7 @@ stages{
           log_function("JIRA","Comments collected")*/
           //jira_delete_issue_json(JSON)
           //jira_delete_project(JSON)  
-    }*/
+    
   stage("DONE TASK")
     {
       
