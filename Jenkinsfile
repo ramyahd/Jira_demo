@@ -38,7 +38,7 @@ stages{
           //jira_delete_issue_json(JSON)
           //jira_delete_project(JSON)  
     
- /* stage("DONE TASK")
+ stage("DONE TASK")
     {
       
     steps
@@ -50,7 +50,7 @@ stages{
     }
     }
     }
-*/
+
   
   
   
