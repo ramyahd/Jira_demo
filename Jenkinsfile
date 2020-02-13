@@ -41,7 +41,11 @@ stages{
       
     steps
     {
-    jira_collect_DONE(JSON)
+      script
+      {
+    jira_collect_DONE.taskdone(JSON)
+    jira_collect_DONE.create()
+    }
     }
     }
 
