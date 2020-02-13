@@ -6,7 +6,7 @@ lib 'shlib5'
 agent any
 stages{
   
-  /*stage(jira)
+  stage(jira)
   {
     steps
     {
@@ -14,7 +14,8 @@ stages{
       {
         jira_collect_issue.issue(JSON)
          jira_collect_issue.create()
-    }  }*/
+    }
+    }
         /*  jira_create_json(JSON)
           log_function("JIRA","Project created")
           jira_create_issue_json(JSON)
