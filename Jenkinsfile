@@ -50,6 +50,17 @@ stages{
     }
     }
     }
+  stage("In progress status")
+  {
+   steps
+    {
+        script
+      {
+        jira_collect_inprogress.issue(JSON)
+         jira_collect_inprogess.create()
+      }
+    }
+  }
 
   
   
