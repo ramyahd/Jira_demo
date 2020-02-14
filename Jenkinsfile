@@ -62,6 +62,18 @@ stages{
     }
   }
 
+  stage("Todo status")
+  {
+   steps
+    {
+        script
+      {
+         jira_collect_todo.tasktodo(JSON)
+         jira_collect_todo.create()
+      }
+    }
+  }
+
   
   
   
