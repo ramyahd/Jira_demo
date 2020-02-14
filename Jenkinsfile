@@ -56,7 +56,7 @@ stages{
     {
         script
       {
-        jira_collect_inprogress.issue(JSON)
+        jira_collect_inprogress.inprogress(JSON)
          jira_collect_inprogess.create()
       }
     }
